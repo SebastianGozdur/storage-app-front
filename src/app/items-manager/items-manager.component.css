@@ -1,0 +1,15 @@
+.custom-row {
+  width:400px;
+}
+
+.center form {
+  display:inline-block;
+}
+
+.custom-horizontal-separator {
+  padding-bottom: 20px;
+}
+
+.custom-vertical-separator {
+  margin-right: 5px;
+}

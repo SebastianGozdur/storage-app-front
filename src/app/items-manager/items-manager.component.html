@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row justify-content-center custom-horizontal-separator">
+    <div class="col-6">
+      <h2>Add item</h2>
+      <form #myForm="ngForm" (ngSubmit) = "getAllItems()">
+        <div class="form-group">
+          <label for="add_name">Name:</label>
+          <input type="text" class="form-control" id="add_name" name="add_name" ngModel>
+        </div>
+
+        <div class="form-group">
+          <label for="add_quantity">Quantity:</label>
+          <input type="text" class="form-control" id="add_quantity" name="add_quantity" ngModel>
+        </div>
+
+        <div class="form-group">
+          <label for="add_related_price">Price:</label>
+          <input type="text" class="form-control" id="add_related_price" name="add_related_price" ngModel>
+        </div>
+
+        <button type="submit" class="btn btn-success">Add item</button>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center custom-horizontal-separator">
+    <div class="col-6">
+      <h2>Update item</h2>
+      <form>
+        <div class="form-group">
+          <label for="update_id">Id:</label>
+          <input type="text" class="form-control" id="update_id" required>
+        </div>
+
+        <div class="form-group">
+          <label for="update_name">Name:</label>
+          <input type="text" class="form-control" id="update_name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="update_quantity">Quantity:</label>
+          <input type="text" class="form-control" id="update_quantity">
+        </div>
+
+        <div class="form-group">
+          <label for="update_related_price">Price:</label>
+          <input type="text" class="form-control" id="update_related_price">
+        </div>
+
+        <button type="submit" class="btn btn-success custom-vertical-separator">Update item</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator">Update name</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator">Update quantity</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator">Update price</button>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center custom-horizontal-separator">
+    <div class="col-6">
+      <h2>Remove item</h2>
+      <form>
+        <div class="form-group">
+          <label for="remove_id">Id:</label>
+          <input type="text" class="form-control" id="remove_id" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Remove item</button>
+      </form>
+    </div>
+  </div>
+</div>
