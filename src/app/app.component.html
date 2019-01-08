@@ -2,8 +2,8 @@
   <a class="navbar-brand">Storage</a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="true">Home</a>
-      <a class="nav-item nav-link" routerLink="/list" routerLinkActive="true">Items</a>
+      <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="true" [ngClass]="{active: choosenMenuElementFlag == 1}" (click)="setFlagVariable(1)">Home</a>
+      <a class="nav-item nav-link" routerLink="/list" routerLinkActive="true" [ngClass]="{active: choosenMenuElementFlag == 2}" (click)="setFlagVariable(2)">Items</a>
     </div>
   </div>
 </nav>

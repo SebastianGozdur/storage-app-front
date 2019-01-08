@@ -8,10 +8,14 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'storage-app-front';
+  private choosenMenuElementFlag: number = 1;
 
   constructor(private http: HttpClient) {
 
+  }
+
+  setFlagVariable(choosenMenuElement: number) {
+    this.choosenMenuElementFlag = choosenMenuElement;
   }
 
   addItem(item) {
@@ -25,13 +29,5 @@ export class AppComponent {
 
   updateItem(item) {
 
-  }
-
-  getAllItems() {
-    this.http.get("http://localhost:3000/storage/api/v1/items").subscribe(
-      data => {
-        console.log(data);
-      }
-    );
   }
 }
