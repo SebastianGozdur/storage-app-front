@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row justify-content-center custom-horizontal-separator">
+    <div class="col-6">
+      <h2>Add item</h2>
+      <form [formGroup]="addForm">
+        <div class="form-group">
+          <label for="add_name">Name:</label>
+          <input type="text" class="form-control" id="add_name" formControlName="add_name_cn" >
+        </div>
+
+        <div class="form-group">
+          <label for="add_quantity">Quantity:</label>
+          <input type="text" class="form-control" id="add_quantity" formControlName="add_quantity_cn">
+        </div>
+
+        <div class="form-group">
+          <label for="add_related_price">Price:</label>
+          <input type="text" class="form-control" id="add_related_price" formControlName="add_related_price_cn" >
+        </div>
+
+        <button type="submit" class="btn btn-success" (click)="addItem()">Add item</button>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center custom-horizontal-separator">
+    <div class="col-6">
+      <h2>Update item</h2>
+      <form [formGroup]="updateForm">
+        <div class="form-group">
+          <label for="update_select_id">Id:</label>
+          <input type="text" class="form-control" id="update_select_id" formControlName="update_select_id_cn">
+        </div>
+
+        <div class="form-group">
+          <label for="update_name">Name:</label>
+          <input type="text" class="form-control" id="update_name" formControlName="update_name_cn">
+        </div>
+
+        <div class="form-group">
+          <label for="update_quantity">Quantity:</label>
+          <input type="text" class="form-control" id="update_quantity" formControlName="update_quantity_cn">
+        </div>
+
+        <div class="form-group">
+          <label for="update_related_price">Price:</label>
+          <input type="text" class="form-control" id="update_related_price" formControlName="update_related_price_cn">
+        </div>
+
+        <button type="submit" class="btn btn-success custom-vertical-separator" (click)="updateItem()">Update item</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator" (click)="updateName()">Update name</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator" (click)="updateQuantity()">Update quantity</button>
+        <button type="submit" class="btn btn-success custom-vertical-separator" (click)="updateRelatedPrice()">Update price</button>
+      </form>
+    </div>
+  </div>
+</div>
